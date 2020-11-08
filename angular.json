@@ -104,6 +104,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "async-pipe-angular"
+    }
+  },
+  "defaultProject": "async-pipe-angular",
+  "cli": {
+    "analytics": false
+  }
 }
