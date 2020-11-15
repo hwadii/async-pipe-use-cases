@@ -1,16 +1,22 @@
+:host {
+  display: flex;
+  flex-direction: row;
+}
+
 ul {
+  width: 10%;
   padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0.4rem 0;
 }
 
 a {
   padding: 0.2rem;
 }
 
-.items {
-  display: inline;
-  margin-right: 0.5rem;
-}
-
 .item-active {
-  border: 1px dashed black;
+  background-color: yellow;
 }

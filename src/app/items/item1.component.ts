@@ -13,7 +13,7 @@ import { json } from '../../data';
       <hr />
     </ng-container>
   `,
-  styles: [],
+  styleUrls: ['item.component.css'],
 })
 export class Item1Component implements OnInit {
   public data$ = of(json);

@@ -6,7 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css'],
 })
 export class AppComponent {
-  public indexes = Array(5)
-    .fill(null)
-    .map((_, i) => i + 1);
+  public indexes = Array(6).fill(null);
 }

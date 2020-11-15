@@ -1,6 +1,6 @@
 <ul>
-  <li *ngFor="let item of indexes" class="items">
-    <a [routerLink]="'item' + item" routerLinkActive="item-active">{{ item }}</a>
+  <li *ngFor="let item of indexes; let index = index" class="items">
+    <a [routerLink]="index" routerLinkActive="item-active">Exemple {{ index }}</a>
   </li>
 </ul>
 <router-outlet></router-outlet>
