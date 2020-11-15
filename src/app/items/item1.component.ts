@@ -7,6 +7,7 @@ import { json } from '../../data';
   selector: 'app-item1',
   template: `
     <h2>Manual subscription ❌</h2>
+    <hr />
     <ng-container *ngFor="let person of data">
       <h3>{{ person.name }}</h3>
       <p>{{ person.company }} {{ person.email }}</p>

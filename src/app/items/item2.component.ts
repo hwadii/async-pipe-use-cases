@@ -6,6 +6,7 @@ import { json } from '../../data';
   selector: 'app-item2',
   template: `
     <h2>Async pipe ✅</h2>
+    <hr />
     <ng-container *ngFor="let person of data$ | async">
       <h3>{{ person.name }}</h3>
       <p>{{ person.company }} {{ person.email }}</p>

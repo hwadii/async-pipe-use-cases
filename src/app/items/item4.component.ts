@@ -7,10 +7,11 @@ import { json } from '../../data';
   selector: 'app-item4',
   template: `
     <h2>In the controller - Subscribe manually ❌</h2>
+    <hr />
     <ng-container *ngFor="let person of data$ | async">
       <h3>{{ person.name }}</h3>
       <p>{{ person.company }} {{ person.email }}</p>
-      <button (click)="onClick(person.name)">Send</button>
+      <button (click)="clicked(person)">Send</button>
       <hr />
     </ng-container>
   `,
@@ -28,7 +29,7 @@ export class Item4Component implements OnInit {
     });
   }
 
-  public onClick(name: string) {
+  public clicked(name: string) {
     console.log(name);
   }
 }

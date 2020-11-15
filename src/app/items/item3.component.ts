@@ -8,8 +8,9 @@ import { json } from '../../data';
     <ng-container *ngIf="data$ | async as data">
       <div class="item3-content">
         <h2>Async pipe multiple ✅</h2>
-        <div>Users: {{ data.length }}</div>
+        <h3>Users: {{ data.length }}</h3>
       </div>
+      <hr />
       <ng-container *ngFor="let person of data">
         <h3>{{ person.name }}</h3>
         <p>{{ person.company }} {{ person.email }}</p>
