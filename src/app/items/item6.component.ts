@@ -11,7 +11,7 @@ const storeData$ = of(json);
   selector: 'app-item6',
   template: `
     <ng-container *ngIf="data$ | async as data">
-      <h2>Manual subscription</h2>
+      <h2>Concrete example</h2>
       <input [formControl]="search" placeholder="Search..." />
       <button (click)="doShuffle(data)">Shuffle</button>
       <hr />
