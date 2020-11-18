@@ -9,7 +9,8 @@ import { json } from '../../data';
     <hr />
     <ng-container *ngFor="let person of data$ | async">
       <h3>{{ person.name }}</h3>
-      <p>{{ person.company }} {{ person.email }}</p>
+      <p>Email: {{ person.email }}</p>
+      <p>Company: {{ person.company }}</p>
       <button (click)="onClick(person.name)">Send</button>
       <hr />
     </ng-container>

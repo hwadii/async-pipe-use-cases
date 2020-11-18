@@ -9,6 +9,8 @@ import { Item3Component } from './items/item3.component';
 import { Item4Component } from './items/item4.component';
 import { Item5Component } from './items/item5.component';
 import { Item0Component } from './items/item0.component';
+import { Item6Component } from './items/item6.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,14 @@ import { Item0Component } from './items/item0.component';
     Item3Component,
     Item4Component,
     Item5Component,
+    Item6Component,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
