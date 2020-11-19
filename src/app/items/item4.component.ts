@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { of } from 'rxjs';
+import { withLatestFrom } from 'rxjs/operators';
 import { json } from '../../data';
 
 const batchSubscribeWithAsync = `
@@ -45,8 +46,8 @@ const somethingElse$ = of(42);
   styleUrls: ['item.component.css'],
 })
 export class Item4Component implements OnInit {
-  // public data$ = of(json).pipe(withLatestFrom(somethingElse$));
-  public data$ = of(json);
+  public data$ = of(json).pipe(withLatestFrom(somethingElse$));
+  // public data$ = of(json);
   public somethingElse$ = somethingElse$;
 
   public ngOnInit() {}
